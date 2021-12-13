@@ -1,20 +1,23 @@
 //Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
-let utente1 = (math.floormath.random()*5+1);
+let utente = Math.floor(Math.random()*6+1);
 
-let computer = (math.floormath.random()*5+1);
+let computer = Math.floor(Math.random()*6+1);
 
-const element = utente1 + computer;
+document.getElementById("utent").innerHTML = utente;
+document.getElementById("comp").innerHTML = computer;
 
-document .getElementById("numeri").innerHTML = element;
 
-
-if(utente1 > computer){
+if(utente > computer){
    
-    document .getElementById("numeri").innerHTML = "utente1 vincitore";
+    document.getElementById("vincitore").innerHTML = "utente vincitore";
+
+}else if(utente == computer){
+
+    document.getElementById("vincitore").innerHTML = "pareggio";
 
 }else{
-
-    document .getElementById("numeri").innerHTML = "utente2 vincitore";
-
+    
+    document.getElementById("vincitore").innerHTML = "computer vince";
+   
 }
