@@ -4,20 +4,21 @@ let utente = Math.floor(Math.random()*6+1);
 
 let computer = Math.floor(Math.random()*6+1);
 
-document.getElementById("utent").innerHTML = utente;
-document.getElementById("comp").innerHTML = computer;
+document.getElementById("utent").innerHTML = `numero il tuo numero è:  ${utente}`;
+document.getElementById("comp").innerHTML = `numero del computer è :  ${computer}`;
 
 
 if(utente > computer){
    
-    document.getElementById("vincitore").innerHTML = "utente vincitore";
+    document.getElementById("vincitore").innerHTML = "complimenti hai vinto!!";
 
 }else if(utente == computer){
 
-    document.getElementById("vincitore").innerHTML = "pareggio";
+    document.getElementById("vincitore").innerHTML = "pareggio -.-";
 
 }else{
     
-    document.getElementById("vincitore").innerHTML = "computer vince";
+    document.getElementById("vincitore").innerHTML = "ci dispiace, hai perso :(";
    
 }
+
