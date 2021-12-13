@@ -4,10 +4,13 @@ const cerca = prompt("inserisci la tua email.");
 
 let controlloEm = false;
 
-for(let i = 0, i = myEmail.length, i++){
-    if(cerca == myEmail[i]){
-        controlloEm = true "email verificata!"
+for(let index = 0, index = myEmail.length ,index++){
+    if(cerca == myEmail[index]){
+        controlloEm = true "email verificata!";
     }
 }
 
-document.getElementById("elem").innerHTML = controlloEm
+document .getElementById("elem").innerHTML = controlloEm;
+
+
+
